@@ -35,7 +35,7 @@ const gulp = require('gulp');
 const encryption = require('encryption-gulp');
 
 gulp.task('encrypt', function() {
-  gulp.src('src/**/*'')
+  gulp.src('src/**/*')
     .pipe(encryption({
       password: 'password',
       decrypt: false,
