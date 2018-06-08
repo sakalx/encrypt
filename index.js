@@ -2,17 +2,13 @@ const crypto = require('crypto');
 const through = require('through2');
 
 module.exports = function ({password = 'password', decrypt = false} = {}) {
-  if (decrypt === true) {
-    return through.obj((vinylFile, encoding, callback) => {
+  return decrypt
+    ? through.obj((vinylFile, encoding, callback) => {
+      callback(null, encryptor(vinylFile, password, decrypt));
+    })
+    : through.obj((vinylFile, encoding, callback) => {
       callback(null, encryptor(vinylFile, password, decrypt));
     });
-  }
-
-  if (decrypt === false) {
-    return through.obj((vinylFile, encoding, callback) => {
-      callback(null, encryptor(vinylFile, password, decrypt));
-    });
-  }
 };
 
 function encryptor(vinylFile, password, decrypt) {

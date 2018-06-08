@@ -5,7 +5,7 @@
  ________________________________________________________
  ________________________________________________________
 
- #### Props
+#### Props
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -15,7 +15,7 @@
  ________________________________________________________
  ________________________________________________________
 
- ### Usage encryption for one file
+### Usage encryption for one file
 
  in your gulpfile.js:
  ```javascript
@@ -33,7 +33,7 @@ gulp.task('encrypt', function() {
 
  ```
 
-  ### Usage encryption for whole project
+### Usage encryption for whole project
 
  ```javascript
 const gulp = require('gulp');
@@ -49,7 +49,7 @@ gulp.task('encrypt', function() {
 });
  ```
 
- ### Usage decryption
+### Usage decryption
 
  just need set `decrypt: true`
  ```javascript
