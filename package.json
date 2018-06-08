@@ -1,0 +1,27 @@
+{
+  "name": "encryption-gulp",
+  "version": "1.0.0",
+  "description": "Encrypt project or file via gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sakalx/encrypt.git"
+  },
+  "keywords": [
+    "gulp",
+    "encryptor",
+    "encrypt"
+  ],
+  "author": "Sakal Serhii <sakals@mail.ua>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sakalx/encrypt/issues"
+  },
+  "homepage": "https://github.com/sakalx/encrypt#readme",
+  "devDependencies": {
+    "through2": "^2.0.3"
+  }
+}
