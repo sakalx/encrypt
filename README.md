@@ -4,7 +4,9 @@
 > npm i encryption-gulp -D
  ________________________________________________________
  ________________________________________________________
+
  #### Props
+
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | **password** | `string` | *password* | you secret password for encrypting / decrypting  |
@@ -12,7 +14,9 @@
 
  ________________________________________________________
  ________________________________________________________
+
  ### Usage encryption for one file
+
  in your gulpfile.js:
  ```javascript
 const gulp = require('gulp');
@@ -28,6 +32,7 @@ gulp.task('encrypt', function() {
 });
 
  ```
+
   ### Usage encryption for whole project
 
  ```javascript
@@ -45,6 +50,7 @@ gulp.task('encrypt', function() {
  ```
 
  ### Usage decryption
+
  just need set `decrypt: true`
  ```javascript
 const gulp = require('gulp');

@@ -1,6 +1,6 @@
 {
   "name": "encryption-gulp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Encrypt project or file via gulp",
   "main": "index.js",
   "scripts": {
